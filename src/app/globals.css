@@ -563,7 +563,7 @@ body {
   font-size: 0.83rem; color: rgba(255,255,255,0.5);
 }
 
-/* ── WISHES TICKER ─────────────────────────────────── */
+/* ── WISHES TICKER — SLOWER & SMOOTHER ─────────────────────────────────── */
 .wishes-track-wrap {
   overflow: hidden;
   margin: 0 -1.5rem;
@@ -574,26 +574,28 @@ body {
 .wishes-track-wrap::before,
 .wishes-track-wrap::after {
   content: ''; position: absolute; top: 0; bottom: 0;
-  width: 100px; z-index: 2;
+  width: 120px; z-index: 2; /* Wider fade for smoother edges */
 }
 .wishes-track-wrap::before { left: 0; background: linear-gradient(to right, var(--deep), transparent); }
 .wishes-track-wrap::after { right: 0; background: linear-gradient(to left, var(--deep), transparent); }
 
 .wishes-track {
-  display: flex; gap: 1.2rem;
+  display: flex; gap: 1.4rem; /* Slightly more spacing = slower perceived speed */
   width: max-content;
-  animation: tickerScroll 28s linear infinite;
+  animation: tickerScroll 55s linear infinite; /* ⬅️ Was 28s — now 55s = ~2x slower */
+  will-change: transform; /* Performance boost */
 }
 .wishes-track:hover { animation-play-state: paused; }
 
 .wishes-track-rev {
-  animation: tickerScrollRev 32s linear infinite;
+  animation: tickerScrollRev 62s linear infinite; /* ⬅️ Was 32s — now 62s */
+  will-change: transform;
 }
 .wishes-track-rev:hover { animation-play-state: paused; }
 
 @keyframes tickerScroll {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-50%); } /* Moves half the duplicated width */
 }
 
 @keyframes tickerScrollRev {
@@ -606,15 +608,17 @@ body {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 100px;
-  padding: 0.65rem 1.5rem;
-  font-size: 0.9rem; white-space: nowrap;
+  padding: 0.7rem 1.6rem; /* Slightly taller = easier to read while moving */
+  font-size: 0.92rem;
+  white-space: nowrap;
   backdrop-filter: blur(8px);
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, transform 0.2s;
 }
 
 .wish-chip:hover {
-  border-color: rgba(255,61,121,0.5);
-  background: rgba(255,61,121,0.1);
+  border-color: rgba(255,61,121,0.6);
+  background: rgba(255,61,121,0.15);
+  transform: scale(1.05); /* Tiny pop on hover */
 }
 
 /* ── TIMELINE ──────────────────────────────────────── */
