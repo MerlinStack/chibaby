@@ -1,20 +1,14 @@
-# Dependencies
-node_modules/
-
 # Next.js build output
 .next/
-build/
 out/
 
-# Build artifacts
-*.log
-.trace
-*-manifest.json
+# TypeScript
+next-env.d.ts
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
 
 # Environment files
 .env
 .env*.local
-
-# IDE
-.vscode/
-.idea/
