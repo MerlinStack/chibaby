@@ -1,0 +1,33 @@
+# Dependencies (agent doesn't need to read these)
+node_modules/
+
+# Build output
+.next/
+build/
+dist/
+out/
+coverage/
+.turbo/
+
+# Media files (agent can't read them anyway)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.webm
+
+# Lock files (reduce noise)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+*.log
+
+# Minified files
+**/*.min.js
+**/*.min.css
+
+# Snapshots
+**/__snapshots__/
