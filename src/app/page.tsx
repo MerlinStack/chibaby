@@ -361,7 +361,10 @@ export default function BirthdayPage() {
               { src: "./images/chim.jpeg", alt: "Happy Happy", label: "Same Energy", title: "😍 Pure Birthday Joy",  caption: "The only correct reaction to today" },
               { src: "./images/chiia.jpeg", alt: "Teddy Dance", label: "Dance Party", title: "🧸 Teddy's Party Too",  caption: "Even Teddy is prescribing more dancing!" },
               { src: "./images/chiii.jpeg", alt: "Celebration Dance", label: "Birthday Vibes", title: "💃 That Energy!", caption: "That's you opening this right now 😄" },
-              { src: "./images/chii.jpeg", alt: "Surprise", label: "Just Like This", title: "🎊 SURPRISE!!!", caption: "How Dr. Chi walks into every room" },
+              {src: "./images/chii.jpeg", alt: "Chi surprise moment", label: "That Moment", title: "🎊 SURPRISE!!!",caption: "How Dr. Chi walks into every room" },
+              {src: "./images/dr.chii.jpeg", alt: "Dr. Chi in action", label: "The Queen", title: "👑 Birthday Royalty", caption: "Saving lives and stealing hearts" },
+              {src: "./images/Dr.chi.jpeg", alt: "Dr. Chi portrait", label: "The Doctor", title: "🩺 Healing Mode", caption: "Crown on, stethoscope ready" },
+              {src: "./images/dr.chim.jpeg", alt: "Dr. Chi celebration", label: "Pure Joy", title: "✨ That Glow Though", caption: "25 and absolutely radiant" },
             ].map((g, i) => (
               <div className="gif-card" key={i}>
                 <div className="gif-frame">
