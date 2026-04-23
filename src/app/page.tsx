@@ -124,7 +124,7 @@ export default function BirthdayPage() {
 
             <div style={{ padding:"1rem 1.5rem", borderBottom:"1px solid rgba(255,255,255,0.1)", display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(140px,1fr))", gap:"0.75rem" }}>
               {[
-                { label:"Name",       value:"Adamazi Chi" },
+                { label:"Name",       value:"Miriam Chi" },
                 { label:"Age",        value:"25 yrs" },
                 { label:"Occupation", value:"Medical Doctor 🩺" },
                 { label:"Ward",       value:"Queen's Suite" },
@@ -333,7 +333,7 @@ export default function BirthdayPage() {
             </p>
             <p>
               So here's what I need you to know on this incredible day: You are loved. You are seen. You are celebrated.
-              Not just today — but every day. Happy 25th birthday, Dr. Adamazi. May this year be your most magnificent yet. 🌸✨
+              Not just today — but every day. Happy 25th birthday, Dr. Miriam Chi. May this year be your most magnificent yet. 🌸✨
             </p>
             <div className="love-letter-close">
               With oceans of love,<br />
