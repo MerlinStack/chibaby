@@ -63,8 +63,9 @@ export default function BirthdayPage() {
 
           <div className="hero-badge">🎊 &nbsp;Birthday Celebration &nbsp;🎊</div>
 
+          {/* ── Age display removed — replaced with radiant symbol ── */}
           <div className="hero-age-display">
-            <span className="age-number">25</span>
+            <span className="age-number">✨</span>
           </div>
 
           <h1 className="hero-name"><span>Dr. Chi</span></h1>
@@ -81,7 +82,7 @@ export default function BirthdayPage() {
           />
 
           <div className="hero-pills">
-            <span className="pill hot">🎂 Turning 25</span>
+            <span className="pill hot">🎂 Birthday Girl</span>
             <span className="pill gold">📅 April 23, 2026</span>
             <span className="pill mint">🩺 Medical Doctor</span>
             <span className="pill peach">🔥 That Girl Era</span>
@@ -114,7 +115,7 @@ export default function BirthdayPage() {
             <div style={{ background:"rgba(255,255,255,0.1)", padding:"1rem 1.5rem", display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:"0.5rem" }}>
               <div>
                 <div style={{ fontSize:"0.7rem", color:"rgba(255,255,255,0.5)", letterSpacing:"0.1em", textTransform:"uppercase" }}>Rhema University Teaching Hospital</div>
-                <div style={{ fontSize:"1rem", fontWeight:"bold", color:"white" }}>PATIENT CHART #000025</div>
+                <div style={{ fontSize:"1rem", fontWeight:"bold", color:"white" }}>PATIENT CHART #BD-2026</div>
               </div>
               <div style={{ textAlign:"right" }}>
                 <div style={{ fontSize:"0.7rem", color:"rgba(255,255,255,0.5)" }}>DOB: April 23, 2001</div>
@@ -125,7 +126,7 @@ export default function BirthdayPage() {
             <div style={{ padding:"1rem 1.5rem", borderBottom:"1px solid rgba(255,255,255,0.1)", display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(140px,1fr))", gap:"0.75rem" }}>
               {[
                 { label:"Name",       value:"Miriam Chi" },
-                { label:"Age",        value:"25 yrs" },
+                { label:"Age",        value:"Perfectly Perfect" },
                 { label:"Occupation", value:"Medical Doctor 🩺" },
                 { label:"Ward",       value:"Queen's Suite" },
               ].map(f => (
@@ -140,12 +141,12 @@ export default function BirthdayPage() {
               <div style={{ fontSize:"0.65rem", color:"rgba(255,255,255,0.4)", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.75rem" }}>Vital Signs</div>
               <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(130px,1fr))", gap:"0.6rem" }}>
                 {[
-                  { icon:"💖", label:"Heart",      value:"Queen BPM",    sub:"Beautifully strong" },
-                  { icon:"✨", label:"Beauty",     value:"100 / 100",    sub:"Off the charts" },
-                  { icon:"🧠", label:"Intelligence",value:"Superior",     sub:"Top percentile" },
-                  { icon:"🌡️", label:"Glow",       value:"BLAZING",      sub:"98.6°F + extra" },
-                  { icon:"💪", label:"Resilience",  value:"Indestructible",sub:"No known cure" },
-                  { icon:"😄", label:"Vibe",        value:"Excellent",    sub:"Infectious (good)" },
+                  { icon:"💖", label:"Heart",        value:"Queen BPM",      sub:"Beautifully strong" },
+                  { icon:"✨", label:"Beauty",        value:"100 / 100",      sub:"Off the charts" },
+                  { icon:"🧠", label:"Intelligence",  value:"Superior",       sub:"Top percentile" },
+                  { icon:"🌡️", label:"Glow",          value:"BLAZING",        sub:"98.6°F + extra" },
+                  { icon:"💪", label:"Resilience",    value:"Indestructible", sub:"No known cure" },
+                  { icon:"😄", label:"Vibe",          value:"Excellent",      sub:"Infectious (good)" },
                 ].map(v => (
                   <div key={v.label} style={{ background:"rgba(255,255,255,0.06)", borderRadius:"8px", padding:"0.6rem 0.75rem", border:"1px solid rgba(255,255,255,0.08)" }}>
                     <div style={{ fontSize:"1rem" }}>{v.icon}</div>
@@ -176,11 +177,11 @@ export default function BirthdayPage() {
               <div style={{ fontSize:"0.65rem", color:"rgba(255,255,255,0.4)", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.5rem" }}>Rx — Prescription</div>
               <div style={{ display:"flex", flexDirection:"column", gap:"0.4rem" }}>
                 {[
-                  { rx:"🎂 Cake",           dose:"As much as desired",           freq:"Annually (minimum)" },
-                  { rx:"🥂 Celebration",    dose:"Maximum therapeutic dose",      freq:"All day, 365" },
-                  { rx:"💛 Self-love",       dose:"Generous daily administration", freq:"Every morning" },
-                  { rx:"🌺 Joy & Rest",      dose:"Unlimited refills",             freq:"PRN (as needed)" },
-                  { rx:"🔬 Great Career",    dose:"Already prescribed at birth",   freq:"Lifetime course" },
+                  { rx:"🎂 Cake",         dose:"As much as desired",            freq:"Annually (minimum)" },
+                  { rx:"🥂 Celebration",  dose:"Maximum therapeutic dose",       freq:"All day, 365" },
+                  { rx:"💛 Self-love",     dose:"Generous daily administration",  freq:"Every morning" },
+                  { rx:"🌺 Joy & Rest",    dose:"Unlimited refills",              freq:"PRN (as needed)" },
+                  { rx:"🔬 Great Career", dose:"Already prescribed at birth",    freq:"Lifetime course" },
                 ].map(r => (
                   <div key={r.rx} style={{ display:"grid", gridTemplateColumns:"1fr 1.4fr 1fr", gap:"0.5rem", fontSize:"0.8rem", color:"rgba(255,255,255,0.8)", borderBottom:"1px dashed rgba(255,255,255,0.08)", paddingBottom:"0.3rem" }}>
                     <span style={{ color:"white", fontWeight:"bold" }}>{r.rx}</span>
@@ -202,14 +203,14 @@ export default function BirthdayPage() {
 
         {/* STATS */}
         <div className="section reveal">
-          <h2 className="section-title">25 Years of Pure Magic ✨</h2>
+          <h2 className="section-title">A Lifetime of Pure Magic ✨</h2>
           <p className="section-sub">By the numbers — clinical data</p>
           <div className="stats-bar">
             {[
-              { icon: "🌍", target: 25,     label: "Years of Greatness" },
               { icon: "💛", target: 7300,   label: "Days Alive & Thriving" },
               { icon: "😄", target: 300000, label: "Smiles Shared" },
               { icon: "💝", target: 999,    label: "Hearts Touched" },
+              { icon: "🩺", target: 1460,   label: "Hours of Medical Training" },
               { icon: "⭐", target: 1,      label: "You (One of a Kind)" },
             ].map((s) => (
               <div className="stat-card" key={s.label}>
@@ -241,21 +242,21 @@ export default function BirthdayPage() {
             </div>
 
             <p className="message-text">
-              Chi, you came into this world 25 years ago and somehow made it infinitely better just by being in it.
+              Chi, you came into this world and somehow made it infinitely better just by being in it.
               And then — as if that weren't enough — you chose medicine. You chose to heal, to serve, to show up for people
               on the hardest days of their lives. That's not just a career. That's a calling. And you were always destined for it.
               You carry grace with you everywhere you go — in the way you laugh, the way you care, and the way you light up
-              every room without even trying. Twenty-five looks absolutely breathtaking on you, but honestly? You make every age
-              look like a masterpiece. Here's to Dr. Chi — the healer, the queen, the woman with the biggest heart in the room.
+              every room without even trying. This birthday looks absolutely breathtaking on you, but honestly?
+              You make every season look like a masterpiece. Here's to Dr. Chi — the healer, the queen, the woman with the biggest heart in the room.
               This one's all for you. 🌸
             </p>
             <p className="message-text" style={{ marginTop: "1rem", fontStyle: "italic", color: "rgba(255,255,255,0.75)" }}>
-              I've watched you navigate life with such poise, such fire. You've turned challenges into chapters and setbacks 
-              into springboards. You don't just survive, Chi — you thrive. You bloom. You shine in ways that make the people 
+              I've watched you navigate life with such poise, such fire. You've turned challenges into chapters and setbacks
+              into springboards. You don't just survive, Chi — you thrive. You bloom. You shine in ways that make the people
               around you feel like they're standing in sunshine.
             </p>
             <div className="message-sig" style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-end", flexWrap:"wrap", gap:"0.5rem" }}>
-              <span>— Happy 25th, with all the love 💛</span>
+              <span>— Happy Birthday, with all the love 💛</span>
               <span style={{ fontSize:"0.7rem", color:"rgba(255,255,255,0.3)", fontFamily:"'Courier New',monospace" }}>Ref: BD-2026-042302</span>
             </div>
           </div>
@@ -264,26 +265,26 @@ export default function BirthdayPage() {
         <div className="divider" />
         <div className="ornament">✦ ✦ ✦</div>
 
-        {/* THINGS WE LOVE — MERGED CONTENT */}
+        {/* THINGS WE LOVE */}
         <div className="section reveal">
           <h2 className="section-title">Things About Dr. Chi 💖</h2>
           <p className="section-sub">Just a few reasons why you're extraordinary</p>
           <div className="love-grid">
             {[
-              { e: "😂", t: "Your Laugh",       d: "Infectious, genuine, the kind that fills a whole room" },
-              { e: "💪", t: "Your Strength",    d: "You carry things with grace that would break others" },
-              { e: "🌸", t: "Your Grace",       d: "Effortlessly elegant in everything you do" },
-              { e: "🧠", t: "Your Medical Mind",d: "Sharp, clinical, and always ten steps ahead of the diagnosis" },
-              { e: "💛", t: "Your Heart",       d: "Warm, generous, and impossibly kind — rare in any ward" },
-              { e: "🎉", t: "Your Energy",      d: "You make every moment feel like a celebration" },
-              { e: "👑", t: "Your Confidence",  d: "You walk like the queen — and doctor — you truly are" },
-              { e: "🌟", t: "Your Glow",        d: "No filter needed — you just radiate" },
-              { e: "🦋", t: "Your Growth",      d: "From student to doctor — watching you evolve has been breathtaking" },
-              { e: "🔬", t: "Your Dedication",  d: "You went through medical school with fire and came out with grace" },
-              { e: "🩺", t: "Your Calling",     d: "Born to heal. Medicine is lucky to have you." },
-              { e: "💌", t: "Your Loyalty",     d: "The kind of friend and colleague people dream of having" },
-              { e: "🎯", t: "Your Drive",       d: "When you want something, you get it. Period." },
-              { e: "🌺", t: "Your Beauty",      d: "Inside out, through and through — a rare combination" },
+              { e: "😂", t: "Your Laugh",        d: "Infectious, genuine, the kind that fills a whole room" },
+              { e: "💪", t: "Your Strength",     d: "You carry things with grace that would break others" },
+              { e: "🌸", t: "Your Grace",        d: "Effortlessly elegant in everything you do" },
+              { e: "🧠", t: "Your Medical Mind", d: "Sharp, clinical, and always ten steps ahead of the diagnosis" },
+              { e: "💛", t: "Your Heart",        d: "Warm, generous, and impossibly kind — rare in any ward" },
+              { e: "🎉", t: "Your Energy",       d: "You make every moment feel like a celebration" },
+              { e: "👑", t: "Your Confidence",   d: "You walk like the queen — and doctor — you truly are" },
+              { e: "🌟", t: "Your Glow",         d: "No filter needed — you just radiate" },
+              { e: "🦋", t: "Your Growth",       d: "From student to doctor — watching you evolve has been breathtaking" },
+              { e: "🔬", t: "Your Dedication",   d: "You went through medical school with fire and came out with grace" },
+              { e: "🩺", t: "Your Calling",      d: "Born to heal. Medicine is lucky to have you." },
+              { e: "💌", t: "Your Loyalty",      d: "The kind of friend and colleague people dream of having" },
+              { e: "🎯", t: "Your Drive",        d: "When you want something, you get it. Period." },
+              { e: "🌺", t: "Your Beauty",       d: "Inside out, through and through — a rare combination" },
             ].map((item, i) => (
               <div className="love-card" key={i}>
                 <span className="love-emoji">{item.e}</span>
@@ -297,7 +298,7 @@ export default function BirthdayPage() {
         <div className="divider" />
         <div className="ornament">🎊 🎊 🎊</div>
 
-        {/* LOVE LETTER — ENHANCED */}
+        {/* LOVE LETTER */}
         <div className="section reveal">
           <h2 className="section-title">A Letter To Dr. Chi 💌</h2>
           <p className="section-sub">The words that needed to be said</p>
@@ -311,7 +312,7 @@ export default function BirthdayPage() {
 
             <div className="love-letter-top">Dearest Dr. Chi,</div>
             <p>
-              Twenty-five. What a number. What a milestone. What a woman — and what a doctor — you have become.
+              Today. What a milestone. What a woman — and what a doctor — you have become.
               If the world had any idea just how rare you are — your laugh, your warmth, the way you care so deeply
               for every single person in your orbit, including every patient who will ever be lucky enough to have you
               in their corner — there would be a holiday named after you.
@@ -322,18 +323,18 @@ export default function BirthdayPage() {
               in completely, and then somehow you still have more to give. That kind of strength is medicine in itself.
             </p>
             <p>
-              I've watched you navigate life with such poise, such fire. You've turned challenges into chapters and setbacks 
-              into springboards. You don't just survive — you thrive. You bloom. You shine in ways that make the people 
+              I've watched you navigate life with such poise, such fire. You've turned challenges into chapters and setbacks
+              into springboards. You don't just survive — you thrive. You bloom. You shine in ways that make the people
               around you feel like they're standing in sunshine.
             </p>
             <p>
-              At 25, you stand at the most beautiful intersection — a fully qualified doctor with your whole career ahead
+              Right now, you stand at the most beautiful intersection — a fully qualified doctor with your whole career ahead
               of you, and the world already in your capable hands. Every patient you'll ever heal, every life you'll touch,
               every diagnosis that will matter — all of it begins here, today, with the woman you already are.
             </p>
             <p>
               So here's what I need you to know on this incredible day: You are loved. You are seen. You are celebrated.
-              Not just today — but every day. Happy 25th birthday, Dr. Miriam Chi. May this year be your most magnificent yet. 🌸✨
+              Not just today — but every day. Happy birthday, Dr. Miriam Chi. May this year be your most magnificent yet. 🌸✨
             </p>
             <div className="love-letter-close">
               With oceans of love,<br />
@@ -356,15 +357,15 @@ export default function BirthdayPage() {
           <p className="section-sub">Because laughter is the best medicine — literally</p>
           <div className="gif-grid">
             {[
-              { src: "./images/chiim.jpeg",      alt: "In addy photo",     label: "In addy Photo",   title: "🕺 The Birthday Doctor",  caption: "When you remember it's your special day" },
-              { src: "./images/chib.jpeg", alt: "Birthday Oops", label: "Classic Chaos", title: "🎂 Oops, The Cake!", caption: '"It wasn\'t me" — Mr. Bean, probably' },
-              { src: "./images/chim.jpeg", alt: "Happy Happy", label: "Same Energy", title: "😍 Pure Birthday Joy",  caption: "The only correct reaction to today" },
-              { src: "./images/chiia.jpeg", alt: "Teddy Dance", label: "Dance Party", title: "🧸 Teddy's Party Too",  caption: "Even Teddy is prescribing more dancing!" },
-              { src: "./images/chiii.jpeg", alt: "Celebration Dance", label: "Birthday Vibes", title: "💃 That Energy!", caption: "That's you opening this right now 😄" },
-              {src: "./images/chii.jpeg", alt: "Chi surprise moment", label: "That Moment", title: "🎊 SURPRISE!!!",caption: "How Dr. Chi walks into every room" },
-              {src: "./images/dr.chii.jpeg", alt: "Dr. Chi in action", label: "The Queen", title: "👑 Birthday Royalty", caption: "Saving lives and stealing hearts" },
-              {src: "./images/Dr.chi.jpeg", alt: "Dr. Chi portrait", label: "The Doctor", title: "🩺 Healing Mode", caption: "Crown on, stethoscope ready" },
-              {src: "./images/dr.chim.jpeg", alt: "Dr. Chi celebration", label: "Pure Joy", title: "✨ That Glow Though", caption: "25 and absolutely radiant" },
+              { src: "./images/chiim.jpeg",    alt: "In addy photo",        label: "In addy Photo",  title: "🕺 The Birthday Doctor",  caption: "When you remember it's your special day" },
+              { src: "./images/chib.jpeg",     alt: "Birthday Oops",        label: "Classic Chaos",  title: "🎂 Oops, The Cake!",      caption: '"It wasn\'t me" — Mr. Bean, probably' },
+              { src: "./images/chim.jpeg",     alt: "Happy Happy",          label: "Same Energy",    title: "😍 Pure Birthday Joy",    caption: "The only correct reaction to today" },
+              { src: "./images/chiia.jpeg",    alt: "Teddy Dance",          label: "Dance Party",    title: "🧸 Teddy's Party Too",    caption: "Even Teddy is prescribing more dancing!" },
+              { src: "./images/chiii.jpeg",    alt: "Celebration Dance",    label: "Birthday Vibes", title: "💃 That Energy!",         caption: "That's you opening this right now 😄" },
+              { src: "./images/chii.jpeg",     alt: "Chi surprise moment",  label: "That Moment",    title: "🎊 SURPRISE!!!",          caption: "How Dr. Chi walks into every room" },
+              { src: "./images/dr.chii.jpeg",  alt: "Dr. Chi in action",    label: "The Queen",      title: "👑 Birthday Royalty",     caption: "Saving lives and stealing hearts" },
+              { src: "./images/Dr.chi.jpeg",   alt: "Dr. Chi portrait",     label: "The Doctor",     title: "🩺 Healing Mode",         caption: "Crown on, stethoscope ready" },
+              { src: "./images/dr.chim.jpeg",  alt: "Dr. Chi celebration",  label: "Pure Joy",       title: "✨ That Glow Though",     caption: "Absolutely radiant" },
             ].map((g, i) => (
               <div className="gif-card" key={i}>
                 <div className="gif-frame">
@@ -384,7 +385,7 @@ export default function BirthdayPage() {
         <div className="divider" />
         <div className="ornament">✨ ✨ ✨</div>
 
-        {/* ══ MEDICAL OATH ═════════════════════════════════ */}
+        {/* ══ THE CHI OATH ═════════════════════════════════ */}
         <div className="section reveal">
           <h2 className="section-title">The Chi Oath 🩺</h2>
           <p className="section-sub">A doctor's creed, rewritten for the birthday queen</p>
@@ -421,7 +422,7 @@ export default function BirthdayPage() {
                 And the birthday queen is IN. 👑
               </p>
               <div style={{ marginTop:"1.5rem", fontSize:"0.8rem", fontFamily:"'Courier New',monospace", fontStyle:"normal", color:"rgba(255,255,255,0.35)", borderTop:"1px dashed rgba(255,255,255,0.12)", paddingTop:"1rem" }}>
-                Sworn & sealed — April 23, 2026 · St. Aventura Teaching Hospital
+                Sworn & sealed — April 23, 2026 · Rhema University Teaching Hospital
               </div>
             </div>
           </div>
@@ -430,22 +431,22 @@ export default function BirthdayPage() {
         <div className="divider" />
         <div className="ornament">✦ ✦ ✦</div>
 
-        {/* VIBE CHECK — MERGED CONTENT */}
+        {/* VIBE CHECK */}
         <div className="section reveal">
           <h2 className="section-title">Dr. Chi's Vibes 🔥</h2>
           <p className="section-sub">This is your season, your moment, your year</p>
           <div className="vibe-grid">
             {[
-              { icon: "👑", cls: "gold",  title: "Main Character Energy",   desc: "Always have been, always will be" },
-              { icon: "💅", cls: "pink",  title: "Unbothered Queen",         desc: "Too blessed to be stressed" },
-              { icon: "🩺", cls: "mint",  title: "Healer & Queen",           desc: "The rarest combination in any room" },
-              { icon: "🎯", cls: "lilac", title: "Goals & Grace",            desc: "She knows what she wants and goes for it" },
-              { icon: "✨", cls: "gold",  title: "Pure Gold",                desc: "Rare, precious, irreplaceable" },
-              { icon: "🔬", cls: "lilac", title: "Scientific & Stunning",    desc: "Brilliance with beauty — unfair, honestly" },
-              { icon: "🔥", cls: "pink",  title: "On Fire",                  desc: "2026 is her year and everyone knows it" },
-              { icon: "💫", cls: "mint",  title: "Star Power",               desc: "She doesn't need a spotlight — she is one" },
-              { icon: "🦋", cls: "lilac", title: "Free Spirit",              desc: "She flies wherever she chooses — in scrubs or in heels" },
-              { icon: "🌺", cls: "mint",  title: "In Full Bloom",            desc: "25 and absolutely flourishing" },
+              { icon: "👑", cls: "gold",  title: "Main Character Energy",  desc: "Always have been, always will be" },
+              { icon: "💅", cls: "pink",  title: "Unbothered Queen",        desc: "Too blessed to be stressed" },
+              { icon: "🩺", cls: "mint",  title: "Healer & Queen",          desc: "The rarest combination in any room" },
+              { icon: "🎯", cls: "lilac", title: "Goals & Grace",           desc: "She knows what she wants and goes for it" },
+              { icon: "✨", cls: "gold",  title: "Pure Gold",               desc: "Rare, precious, irreplaceable" },
+              { icon: "🔬", cls: "lilac", title: "Scientific & Stunning",   desc: "Brilliance with beauty — unfair, honestly" },
+              { icon: "🔥", cls: "pink",  title: "On Fire",                 desc: "2026 is her year and everyone knows it" },
+              { icon: "💫", cls: "mint",  title: "Star Power",              desc: "She doesn't need a spotlight — she is one" },
+              { icon: "🦋", cls: "lilac", title: "Free Spirit",             desc: "She flies wherever she chooses — in scrubs or in heels" },
+              { icon: "🌺", cls: "mint",  title: "In Full Bloom",           desc: "Absolutely flourishing, always" },
             ].map((v, i) => (
               <div className="vibe-card" key={i}>
                 <div className={`vibe-icon ${v.cls}`}>{v.icon}</div>
@@ -461,7 +462,7 @@ export default function BirthdayPage() {
         <div className="divider" />
         <div className="ornament">🌸 ✦ 🌸</div>
 
-        {/* WISHES TICKER — ENHANCED */}
+        {/* WISHES TICKER */}
         <div className="section reveal" style={{ paddingBottom: "2rem" }}>
           <h2 className="section-title">Birthday Wishes 🌟</h2>
           <p className="section-sub">All the good things coming your way — doctor's orders</p>
@@ -478,7 +479,7 @@ export default function BirthdayPage() {
         <div className="divider" />
         <div className="ornament">📝 ✦ 📝</div>
 
-        {/* STICKY NOTE WALL — ENHANCED */}
+        {/* STICKY NOTE WALL */}
         <div className="section reveal">
           <h2 className="section-title">Sticky Note Wall 📝</h2>
           <p className="section-sub">Little notes for the birthday queen — from the ward with love</p>
@@ -488,20 +489,20 @@ export default function BirthdayPage() {
         <div className="divider" />
         <div className="ornament">⭐ ⭐ ⭐</div>
 
-        {/* TIMELINE — MERGED CONTENT */}
+        {/* TIMELINE */}
         <div className="section reveal">
           <h2 className="section-title">Your Story So Far 📖</h2>
-          <p className="section-sub">25 years of being absolutely amazing</p>
+          <p className="section-sub">A lifetime of being absolutely amazing</p>
           <div className="timeline">
             {[
-              { dot: "👶", year: "Day One",          text: "The world gains its most precious addition — you arrive and everything changes. 🌍" },
-              { dot: "🌱", year: "Early Years",       text: "Curious, bright-eyed, full of wonder. You were always something special." },
-              { dot: "📚", year: "School Days",       text: "Brilliant and hardworking — you outshine everyone while making it look effortless." },
-              { dot: "🌸", year: "Teen Years",        text: "Glowing up, levelling up, absolutely thriving and turning heads everywhere." },
-              { dot: "🔥", year: "Finding Your Power",text: "Discovering your voice, your vision, your calling. Unstoppable force in the making." },
-              { dot: "🩺", year: "Medical School",    text: "Chose the hardest path — and conquered it. MBBS in hand, and only just getting started." },
-              { dot: "👩‍⚕️", year: "Dr. Chi — Today!",text: "The coat fits perfectly. The world is lucky to have Dr. Chi. 🥂" },
-              { dot: "✨", year: "The Future",         text: "Every patient lucky enough to have you. Every life touched. The whole world is yours. 🌟" },
+              { dot: "👶", year: "Day One",           text: "The world gains its most precious addition — you arrive and everything changes. 🌍" },
+              { dot: "🌱", year: "Early Years",        text: "Curious, bright-eyed, full of wonder. You were always something special." },
+              { dot: "📚", year: "School Days",        text: "Brilliant and hardworking — you outshine everyone while making it look effortless." },
+              { dot: "🌸", year: "Teen Years",         text: "Glowing up, levelling up, absolutely thriving and turning heads everywhere." },
+              { dot: "🔥", year: "Finding Your Power", text: "Discovering your voice, your vision, your calling. Unstoppable force in the making." },
+              { dot: "🩺", year: "Medical School",     text: "Chose the hardest path — and conquered it. MBBS in hand, and only just getting started." },
+              { dot: "👩‍⚕️", year: "Dr. Chi — Today!",  text: "The coat fits perfectly. The world is lucky to have Dr. Chi. 🥂" },
+              { dot: "✨", year: "The Future",          text: "Every patient lucky enough to have you. Every life touched. The whole world is yours. 🌟" },
             ].map((item, i) => (
               <div className="tl-item" key={i}>
                 <div className="tl-dot">{item.dot}</div>
@@ -523,10 +524,10 @@ export default function BirthdayPage() {
           <p className="section-sub">Snapshots of a life beautifully — and brilliantly — lived</p>
           <div className="polaroid-grid">
             {[
-              { src: "/images/chi.jpeg",   caption: "The Birthday Queen 👑",     fallbackColor: "FF3D79" },
-              { src: "/images/chi 5.jpeg", caption: "Dr. Chi, MBBS ✨",          fallbackColor: "C084FC" },
-              { src: "/images/chi .jpeg",  caption: "25 & Fabulous 🌸",          fallbackColor: "FFD166" },
-              { src: "/images/chi 6.jpeg", caption: "Born to Heal 🩺💛",         fallbackColor: "06D6A0" },
+              { src: "/images/chi.jpeg",   caption: "The Birthday Queen 👑",  fallbackColor: "FF3D79" },
+              { src: "/images/chi 5.jpeg", caption: "Dr. Chi, MBBS ✨",       fallbackColor: "C084FC" },
+              { src: "/images/chi .jpeg",  caption: "Birthday Fabulous 🌸",   fallbackColor: "FFD166" },
+              { src: "/images/chi 6.jpeg", caption: "Born to Heal 🩺💛",      fallbackColor: "06D6A0" },
             ].map((p, i) => (
               <div className="polaroid" key={i}>
                 <img
@@ -549,7 +550,7 @@ export default function BirthdayPage() {
         {/* FOOTER */}
         <footer className="footer reveal">
           <span className="footer-emojis">🎉🎂🩺🎊🎈</span>
-          <div className="footer-big">Happy 25th Birthday, Dr. Chi!</div>
+          <div className="footer-big">Happy Birthday, Dr. Chi!</div>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.1rem", marginBottom: "1.2rem", fontFamily: "'Dancing Script', cursive" }}>
             May every single day feel as special as you are 💛
           </p>
@@ -570,7 +571,7 @@ export default function BirthdayPage() {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   CLIENT-SIDE LOGIC — ENHANCED WITH ALL CONTENT
+   CLIENT-SIDE LOGIC
 ═══════════════════════════════════════════════════════════ */
 function initBirthday() {
   const bgCanvas = document.getElementById("bg-canvas") as HTMLCanvasElement;
@@ -645,55 +646,51 @@ function initBirthday() {
   document.addEventListener("mouseover",e=>{ if(hoverCD) return; const el=(e.target as Element).closest(HOVER_SEL); if(!el) return; hoverCD=true; setTimeout(()=>{hoverCD=false;},900); const r=el.getBoundingClientRect(); myConfetti({particleCount:22,spread:62,origin:{x:(r.left+r.width/2)/window.innerWidth,y:(r.top+r.height/2)/window.innerHeight},colors:COLORS,scalar:0.65,startVelocity:17,gravity:0.9}); });
   document.addEventListener("touchstart",e=>{ const el=(e.target as Element).closest(HOVER_SEL); if(!el) return; const r=el.getBoundingClientRect(); myConfetti({particleCount:30,spread:68,origin:{x:(r.left+r.width/2)/window.innerWidth,y:(r.top+r.height/2)/window.innerHeight},colors:COLORS,scalar:0.72}); },{passive:true});
 
-  // ══ WISHES TICKER — OPTIMIZED FOR SMOOTH SCROLL ═════════════════════════════
-const wishes1 = [
-  "🌸 May you always bloom","💛 Endless happiness","🎂 25 & thriving",
-  "✨ You deserve the world","🥂 To new adventures","💫 Big year ahead",
-  "🌟 So proud of you","🎊 Queen behaviour only","💝 Loved beyond words",
-  "🔥 Your best year yet","🌺 Grace & greatness","🎈 Keep shining bright",
-  "💌 You are so loved","🦋 Beautiful transformation","🩺 Healing the world",
-  "👑 Born to reign","💃 Dance through life","🍀 Luck finds you always",
-];
+  const wishes1 = [
+    "🌸 May you always bloom","💛 Endless happiness","🎂 Thriving always",
+    "✨ You deserve the world","🥂 To new adventures","💫 Big year ahead",
+    "🌟 So proud of you","🎊 Queen behaviour only","💝 Loved beyond words",
+    "🔥 Your best year yet","🌺 Grace & greatness","🎈 Keep shining bright",
+    "💌 You are so loved","🦋 Beautiful transformation","🩺 Healing the world",
+    "👑 Born to reign","💃 Dance through life","🍀 Luck finds you always",
+  ];
+  const wishes2 = [
+    "🎀 Wrapped in love","🌙 Peaceful nights","☀️ Golden days",
+    "💎 Rare & precious","🎵 Life in melody","🌊 Flow gracefully",
+    "🦚 Stand in power","🍓 Sweet moments","🌻 Face the sun",
+    "💪 Stronger yearly","🎯 Hit every target","🌟 Star of show",
+    "🧡 Wrapped in warmth","🩺 Doctor & queen","🌿 Grow endlessly",
+    "💜 Deeply cherished","🎶 Song plays on","💊 Prescribed: joy",
+  ];
+  function fillTicker(id:string, arr:string[]) {
+    const track = document.getElementById(id);
+    if (!track) return;
+    [...arr, ...arr].forEach((w) => {
+      const chip = document.createElement("div");
+      chip.className = "wish-chip";
+      chip.textContent = w;
+      track.appendChild(chip);
+    });
+  }
+  fillTicker("ticker1", wishes1);
+  fillTicker("ticker2", wishes2);
 
-const wishes2 = [
-  "🎀 Wrapped in love","🌙 Peaceful nights","☀️ Golden days",
-  "💎 Rare & precious","🎵 Life in melody","🌊 Flow gracefully",
-  "🦚 Stand in power","🍓 Sweet moments","🌻 Face the sun",
-  "💪 Stronger yearly","🎯 Hit every target","🌟 Star of show",
-  "🧡 Wrapped in warmth","🩺 Doctor & queen","🌿 Grow endlessly",
-  "💜 Deeply cherished","🎶 Song plays on","💊 Prescribed: joy",
-];
-
-function fillTicker(id:string, arr:string[]) {
-  const track = document.getElementById(id);
-  if (!track) return;
-  // Only duplicate once for seamless loop, fewer items = slower visual speed
-  [...arr, ...arr].forEach((w) => {
-    const chip = document.createElement("div");
-    chip.className = "wish-chip";
-    chip.textContent = w;
-    track.appendChild(chip);
-  });
-}
-fillTicker("ticker1", wishes1);
-fillTicker("ticker2", wishes2);
-  // ══ ENHANCED STICKY NOTES ═════════════════════════════
   const notes=[
     { text:"You are a whole vibe, Dr. Chi! 💖",                    bg:"rgba(255,61,121,0.25)",  pin:"#FF3D79" },
     { text:"The most gorgeous doctor I know ✨",                     bg:"rgba(255,209,102,0.2)",  pin:"#FFD166" },
     { text:"God really took His time with you 🌸",                  bg:"rgba(192,132,252,0.25)", pin:"#C084FC" },
     { text:"Wishing you a year as beautiful as your smile 😊",      bg:"rgba(6,214,160,0.2)",    pin:"#06D6A0" },
     { text:"Chi = Light. It's right there in the name ☀️",          bg:"rgba(255,154,60,0.2)",   pin:"#FF9A3C" },
-    { text:"25 and absolutely unstoppable 🔥",                      bg:"rgba(255,61,121,0.2)",   pin:"#FF3D79" },
+    { text:"Absolutely unstoppable 🔥",                             bg:"rgba(255,61,121,0.2)",   pin:"#FF3D79" },
     { text:"The world is lucky to have you 💛",                     bg:"rgba(192,132,252,0.2)",  pin:"#C084FC" },
     { text:"Doctor AND queen? Unfair to the rest of us 👑",         bg:"rgba(255,209,102,0.25)", pin:"#FFD166" },
-    { text:"You make every patient luckier just by showing up 🩺", bg:"rgba(6,214,160,0.25)",   pin:"#06D6A0" },
+    { text:"You make every patient luckier just by showing up 🩺",  bg:"rgba(6,214,160,0.25)",   pin:"#06D6A0" },
     { text:"Big things are coming your way, Dr. Chi! 🚀",           bg:"rgba(255,61,121,0.22)",  pin:"#FF3D79" },
     { text:"Your glow? Unmatched. Your stethoscope? Iconic ⚡",    bg:"rgba(192,132,252,0.22)", pin:"#C084FC" },
     { text:"Happy birthday to the realest one 💜",                  bg:"rgba(255,154,60,0.22)",  pin:"#FF9A3C" },
-    { text:"The most gorgeous 25 year old I know ✨",               bg:"rgba(255,209,102,0.2)",  pin:"#FFD166" },
-    { text:"Turning 25 like a queen 👑",                            bg:"rgba(255,209,102,0.25)", pin:"#FFD166" },
-    { text:"You make everything better just by showing up 🌺",     bg:"rgba(6,214,160,0.25)",   pin:"#06D6A0" },
+    { text:"The most gorgeous doctor I know ✨",                     bg:"rgba(255,209,102,0.2)",  pin:"#FFD166" },
+    { text:"Born to be a queen, born to heal 👑",                   bg:"rgba(255,209,102,0.25)", pin:"#FFD166" },
+    { text:"You make everything better just by showing up 🌺",      bg:"rgba(6,214,160,0.25)",   pin:"#06D6A0" },
     { text:"Your energy? Unreal. Your future? Brighter ⚡",        bg:"rgba(192,132,252,0.22)", pin:"#C084FC" },
   ];
   const wall=document.getElementById("wish-wall");
