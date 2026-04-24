@@ -118,7 +118,7 @@ export default function BirthdayPage() {
                 <div style={{ fontSize:"1rem", fontWeight:"bold", color:"white" }}>PATIENT CHART #BD-2026</div>
               </div>
               <div style={{ textAlign:"right" }}>
-                <div style={{ fontSize:"0.7rem", color:"rgba(255,255,255,0.5)" }}>DOB: April 23, 2001</div>
+                <div style={{ fontSize:"0.7rem", color:"rgba(255,255,255,0.5)" }}>DOB: April 23</div>
                 <div style={{ fontSize:"0.85rem", color:"#FFD166" }}>STATUS: ✅ FLOURISHING</div>
               </div>
             </div>
